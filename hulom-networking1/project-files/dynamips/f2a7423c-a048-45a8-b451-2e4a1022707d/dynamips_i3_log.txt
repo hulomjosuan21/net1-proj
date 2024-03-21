@@ -1,0 +1,56 @@
+Mar 19 10:53:50.337 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 19 10:53:50.337 HYPERVISOR: Started on IP = localhost, TCP port = 49802.
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips 
+Mar 19 10:53:50.852 GENERAL: working_dir=C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips\0f82518d-14e3-4d14-9394-4094f10df681 
+Mar 19 10:53:50.852 GENERAL: working_dir=C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips\0f82518d-14e3-4d14-9394-4094f10df681
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: vm create PC1 2 c3600 
+Mar 19 10:53:50.852 VM: VM PC1 created.
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC1 5002 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: c3600 get_mac_addr PC1 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: c3600 set_chassis PC1 3660 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: vm set_exec_area PC1 64 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: vm set_ios PC1 C:/Users/FOR CLONE/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: c3600 set_mac_addr PC1 cc02.0748.0000 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: vm set_nvram PC1 256 
+Mar 19 10:53:50.852 HYPERVISOR: exec_cmd: vm set_ram PC1 192 
+Mar 19 10:53:50.930 HYPERVISOR: exec_cmd: nio create_udp udp-c8b05c70-cd66-4804-b40e-6b0eb84d6e1b 10002 127.0.0.1 10003 
+Mar 19 10:53:51.165 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC1 0 0 udp-c8b05c70-cd66-4804-b40e-6b0eb84d6e1b 
+Mar 19 10:53:51.165 HYPERVISOR: exec_cmd: vm get_status PC1 
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Mar 19 10:53:54.336 VM: VM Ghost created.
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/FOR CLONE/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips\c3660-jk9o3s-mz.124-25d.image-192.ghost 
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Mar 19 10:53:54.336 HYPERVISOR: exec_cmd: vm start Ghost 
+Mar 19 10:53:55.070 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 19 10:53:55.070 HYPERVISOR: exec_cmd: vm stop Ghost 
+Mar 19 10:53:55.196 VM: VM Ghost shutdown.
+Mar 19 10:53:55.196 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Mar 19 10:53:55.196 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Mar 19 10:53:55.196 VM: VM Ghost destroyed.
+Mar 19 10:53:55.196 HYPERVISOR: exec_cmd: vm set_ghost_status PC1 2 
+Mar 19 10:53:55.196 HYPERVISOR: exec_cmd: vm set_ghost_file PC1 C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips\c3660-jk9o3s-mz.124-25d.image-192.ghost 
+Mar 19 10:53:55.196 HYPERVISOR: exec_cmd: vm get_status PC1 
+Mar 19 10:53:55.211 HYPERVISOR: exec_cmd: vm set_config PC1 configs\i2_startup-config.cfg 
+Mar 19 10:53:55.211 HYPERVISOR: exec_cmd: vm start PC1 
+Mar 19 10:56:25.582 HYPERVISOR: exec_cmd: vm extract_config PC1 
+Mar 19 10:59:55.672 HYPERVISOR: exec_cmd: vm extract_config PC1 
+Mar 19 11:46:26.682 HYPERVISOR: exec_cmd: vm extract_config PC1 
+Mar 19 11:52:26.805 HYPERVISOR: exec_cmd: vm extract_config PC1 
+Mar 19 11:53:26.804 HYPERVISOR: exec_cmd: vm extract_config PC1 
+Mar 19 12:07:32.739 HYPERVISOR: exec_cmd: vm get_status PC1 
+Mar 19 12:07:32.739 HYPERVISOR: exec_cmd: vm stop PC1 
+Mar 19 12:07:32.788 VM: VM PC1 shutdown.
+Mar 19 12:07:32.789 HYPERVISOR: exec_cmd: vm extract_config PC1 
+Mar 19 12:07:32.889 HYPERVISOR: exec_cmd: vm get_status PC1 
+Mar 19 12:07:32.890 HYPERVISOR: exec_cmd: vm extract_config PC1 
+Mar 19 12:07:32.891 HYPERVISOR: exec_cmd: vm delete PC1 
+Mar 19 12:07:32.891 VM: VM PC1 destroyed.
+Mar 19 12:07:32.891 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 19 12:07:33.027 HYPERVISOR: Stopped.
+Mar 19 12:07:33.027 GENERAL: reset done.

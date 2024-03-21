@@ -1,0 +1,19 @@
+Mar 19 10:53:49.259 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 19 10:53:49.259 HYPERVISOR: Started on IP = localhost, TCP port = 49789.
+Mar 19 10:53:49.759 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 19 10:53:49.759 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips 
+Mar 19 10:53:49.759 GENERAL: working_dir=C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips
+Mar 19 10:53:49.759 HYPERVISOR: exec_cmd: ethsw create S 
+Mar 19 10:53:50.899 HYPERVISOR: exec_cmd: nio create_udp udp-4408f465-cd2e-4053-b52e-248e76447a5a 10000 127.0.0.1 10001 
+Mar 19 10:53:50.899 HYPERVISOR: exec_cmd: ethsw add_nio S udp-4408f465-cd2e-4053-b52e-248e76447a5a 
+Mar 19 10:53:50.930 HYPERVISOR: exec_cmd: ethsw set_access_port S udp-4408f465-cd2e-4053-b52e-248e76447a5a 1 
+Mar 19 10:53:51.180 HYPERVISOR: exec_cmd: nio create_udp udp-89de6f39-c486-4dde-aa4d-81f204f2dea6 10004 127.0.0.1 10005 
+Mar 19 10:53:51.180 HYPERVISOR: exec_cmd: ethsw add_nio S udp-89de6f39-c486-4dde-aa4d-81f204f2dea6 
+Mar 19 10:53:51.212 HYPERVISOR: exec_cmd: ethsw set_access_port S udp-89de6f39-c486-4dde-aa4d-81f204f2dea6 1 
+Mar 19 10:53:51.446 HYPERVISOR: exec_cmd: nio create_udp udp-a69a1e08-074b-4a82-b657-693b5e14caa8 10008 127.0.0.1 10009 
+Mar 19 10:53:51.446 HYPERVISOR: exec_cmd: ethsw add_nio S udp-a69a1e08-074b-4a82-b657-693b5e14caa8 
+Mar 19 10:53:51.461 HYPERVISOR: exec_cmd: ethsw set_access_port S udp-a69a1e08-074b-4a82-b657-693b5e14caa8 1 
+Mar 19 12:07:32.796 HYPERVISOR: exec_cmd: ethsw delete S 
+Mar 19 12:07:32.856 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 19 12:07:32.887 HYPERVISOR: Stopped.
+Mar 19 12:07:32.887 GENERAL: reset done.

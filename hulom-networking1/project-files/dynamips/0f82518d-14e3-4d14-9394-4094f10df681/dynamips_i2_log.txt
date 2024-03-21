@@ -1,0 +1,38 @@
+Mar 19 10:53:49.805 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 19 10:53:49.805 HYPERVISOR: Started on IP = localhost, TCP port = 49799.
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips 
+Mar 19 10:53:50.305 GENERAL: working_dir=C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips\0b02c5e8-8490-49fd-a5f0-251774ef7b58 
+Mar 19 10:53:50.305 GENERAL: working_dir=C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips\0b02c5e8-8490-49fd-a5f0-251774ef7b58
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: vm create R 1 c3600 
+Mar 19 10:53:50.305 VM: VM R created.
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: vm set_con_tcp_port R 5001 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: c3600 get_mac_addr R 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: c3600 set_chassis R 3660 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: vm set_exec_area R 64 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: vm set_ios R C:/Users/FOR CLONE/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: c3600 set_mac_addr R cc01.0e0c.0000 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: vm set_nvram R 256 
+Mar 19 10:53:50.305 HYPERVISOR: exec_cmd: vm set_ram R 192 
+Mar 19 10:53:51.461 HYPERVISOR: exec_cmd: nio create_udp udp-45d2d8dc-665b-443c-992a-71fb8770c8e6 10010 127.0.0.1 10011 
+Mar 19 10:53:51.680 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R 0 0 udp-45d2d8dc-665b-443c-992a-71fb8770c8e6 
+Mar 19 10:53:51.680 HYPERVISOR: exec_cmd: vm get_status R 
+Mar 19 10:53:55.196 HYPERVISOR: exec_cmd: vm set_ghost_status R 2 
+Mar 19 10:53:55.211 HYPERVISOR: exec_cmd: vm set_ghost_file R C:\Users\FOR CLONE\Desktop\hulom-networking1\project-files\dynamips\c3660-jk9o3s-mz.124-25d.image-192.ghost 
+Mar 19 10:53:55.211 HYPERVISOR: exec_cmd: vm get_status R 
+Mar 19 10:53:55.211 HYPERVISOR: exec_cmd: vm set_config R configs\i1_startup-config.cfg 
+Mar 19 10:53:55.211 HYPERVISOR: exec_cmd: vm start R 
+Mar 19 11:01:55.717 HYPERVISOR: exec_cmd: vm extract_config R 
+Mar 19 11:19:56.154 HYPERVISOR: exec_cmd: vm extract_config R 
+Mar 19 12:07:32.738 HYPERVISOR: exec_cmd: vm get_status R 
+Mar 19 12:07:32.739 HYPERVISOR: exec_cmd: vm stop R 
+Mar 19 12:07:32.788 VM: VM R shutdown.
+Mar 19 12:07:32.789 HYPERVISOR: exec_cmd: vm extract_config R 
+Mar 19 12:07:32.889 HYPERVISOR: exec_cmd: vm get_status R 
+Mar 19 12:07:32.890 HYPERVISOR: exec_cmd: vm extract_config R 
+Mar 19 12:07:32.890 HYPERVISOR: exec_cmd: vm delete R 
+Mar 19 12:07:32.890 VM: VM R destroyed.
+Mar 19 12:07:32.891 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 19 12:07:33.027 HYPERVISOR: Stopped.
+Mar 19 12:07:33.027 GENERAL: reset done.
